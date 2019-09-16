@@ -1,0 +1,59 @@
+<ion-header no-border>
+    <ion-toolbar>
+      <ion-buttons slot="end">
+        <ion-button color='primary' (click)="startApp()" [hidden]="!showSkip">Pular</ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content fullscreen>
+    <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager="true">
+      <ion-slide>
+        <img src="assets/img/slide-rescar.png" class="slide-image" />
+        <h2 class="slide-title">
+          Bem vindo ao
+          <b>FB Ciensibilize</b>
+        </h2>
+        <p>
+          O
+          <b>FB Ciensibilize</b> é um aplicativo para a Feira de Ciências do Colégio Farias Brito.
+        </p>
+        <ion-button fill="clear" (click)="slideNext()" [hidden]="!isDesktop">
+          Próximo
+          <ion-icon slot="end" name="arrow-forward"></ion-icon>
+        </ion-button>
+      </ion-slide>
+  
+      <ion-slide>
+        <img src="assets/img/slide-ionic.png" class="slide-image" />
+        <h2 class="slide-title">O que é Ionic?</h2>
+        <p>
+          <b>Ionic Framework</b> é um framework open source para criação de aplicativos híbridos utilizando 
+          HTML, CSS, e JavaScript.</p>
+        <ion-button fill="clear" (click)="slideNext()" [hidden]="!isDesktop">
+          Próximo
+          <ion-icon slot="end" name="arrow-forward"></ion-icon>
+        </ion-button>
+      </ion-slide>
+  
+      <ion-slide>
+        <img src="assets/img/slide-ddd.png" class="slide-image" />
+        <h2 class="slide-title">O que é DDD?</h2>
+        <p>
+          <b>DDD</b> ou <b>Domain-Driven Design</b> é uma abordagem para o desenvolvimento de software onde o domínio de negócio é a peça central.</p>
+        <ion-button fill="clear" (click)="slideNext()" [hidden]="!isDesktop">
+          Próximo
+          <ion-icon slot="end" name="arrow-forward"></ion-icon>
+        </ion-button>
+      </ion-slide>
+  
+      <ion-slide>
+        <img src="assets/img/slide-pronto.png" class="slide-image" />
+        <h2 class="slide-title">Pronto para continuar?</h2>
+        <ion-button fill="clear" (click)="startApp()">
+          Continuar
+          <ion-icon slot="end" name="arrow-forward"></ion-icon>
+        </ion-button>
+      </ion-slide>
+    </ion-slides>
+  </ion-content>

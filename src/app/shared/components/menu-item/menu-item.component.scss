@@ -1,0 +1,15 @@
+ion-item {
+    border-left: 6px solid transparent;
+}
+
+.active-item {
+    border-left: 6px solid var(--ion-color-primary);
+}
+
+.btn-sair {
+    padding-right: 6px;
+}
+
+.btn-tutorial {
+    padding-left: 6px;
+}

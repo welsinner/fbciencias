@@ -1,0 +1,36 @@
+<ion-app>
+    <ion-split-pane contentId="menu-content">
+  
+      <ion-menu contentId="menu-content" disabled="true" type="overlay">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>FB Ciensibilize</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          <ion-list lines="none">
+            <ion-menu-toggle auto-hide="false" *ngFor="let item of itensMenu">
+              <app-menu-item [item]="item"></app-menu-item>
+            </ion-menu-toggle>
+          </ion-list>
+        </ion-content>
+        <ion-footer no-border>
+          <ion-toolbar>
+            <ion-buttons slot="start">
+              <ion-button class="btn-tutorial" (click)="openTutorial()">
+                <ion-icon slot="icon-only" name="help-circle-outline">Tutorial</ion-icon>
+              </ion-button>
+            </ion-buttons>
+            <ion-buttons slot="end">
+              <ion-button class="btn-sair" (click)="logout()">
+                <ion-icon slot="icon-only" name="log-out">Sair</ion-icon>
+              </ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+        </ion-footer>
+      </ion-menu>
+  
+      <ion-router-outlet id="menu-content"></ion-router-outlet>
+  
+    </ion-split-pane>
+  </ion-app>

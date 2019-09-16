@@ -1,0 +1,12 @@
+// Cards
+@media (min-width: 992px) {
+    ion-card.card-info {
+        max-width: 600px !important;
+    }
+}
+
+// Tamanho Menu
+.split-pane-visible >.split-pane-side {
+    min-width: 300px!important;
+    max-width: 300px!important;
+}
