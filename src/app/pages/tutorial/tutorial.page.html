@@ -9,15 +9,24 @@
   <ion-content fullscreen>
     <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager="true">
       <ion-slide>
-        <img src="assets/img/slide-rescar.png" class="slide-image" />
+        <img src="assets/img/einstein-cientista-color.png" class="slide-image" />
         <h2 class="slide-title">
-          Bem vindo ao
-          <b>FB Ciensibilize</b>
+          Bem-vindo ao FB Ciensibilize
         </h2>
+        <p>Eu sou Albert Einstein. Está pronto para participar dessa jornada de descobertas?</p>
+        <ion-button fill="clear" (click)="slideNext()" [hidden]="!isDesktop">
+          Próximo
+          <ion-icon slot="end" name="arrow-forward"></ion-icon>
+        </ion-button>
+      </ion-slide>
+  
+      <ion-slide>
+        <img src="assets/img/einstein-relatividade.png" class="slide-image" />
+        <h2 class="slide-title">Teoria da Relatividade</h2>
         <p>
-          O
-          <b>FB Ciensibilize</b> é um aplicativo para a Feira de Ciências do Colégio Farias Brito.
+          <b>100 Anos de Uma Ideia que Mudou o Mundo.</b> Como passa rápido! E o Ceará foi fundamental nessa descoberta.
         </p>
+        <p><b> Vamos saber mais?</b></p>
         <ion-button fill="clear" (click)="slideNext()" [hidden]="!isDesktop">
           Próximo
           <ion-icon slot="end" name="arrow-forward"></ion-icon>
@@ -26,10 +35,10 @@
   
       <ion-slide>
         <img src="assets/img/slide-ionic.png" class="slide-image" />
-        <h2 class="slide-title">O que é Ionic?</h2>
+        <h2 class="slide-title">Avanço Tecnológico</h2>
         <p>
-          <b>Ionic Framework</b> é um framework open source para criação de aplicativos híbridos utilizando 
-          HTML, CSS, e JavaScript.</p>
+          Desde então, muitas tecnologias surgiram. <b>Computador, GPS e Celular.</b></p>
+        <p><b> Quem nunca usou um desses?</b></p>
         <ion-button fill="clear" (click)="slideNext()" [hidden]="!isDesktop">
           Próximo
           <ion-icon slot="end" name="arrow-forward"></ion-icon>
@@ -37,19 +46,9 @@
       </ion-slide>
   
       <ion-slide>
-        <img src="assets/img/slide-ddd.png" class="slide-image" />
-        <h2 class="slide-title">O que é DDD?</h2>
-        <p>
-          <b>DDD</b> ou <b>Domain-Driven Design</b> é uma abordagem para o desenvolvimento de software onde o domínio de negócio é a peça central.</p>
-        <ion-button fill="clear" (click)="slideNext()" [hidden]="!isDesktop">
-          Próximo
-          <ion-icon slot="end" name="arrow-forward"></ion-icon>
-        </ion-button>
-      </ion-slide>
-  
-      <ion-slide>
-        <img src="assets/img/slide-pronto.png" class="slide-image" />
+        <img src="assets/img/turminha-com-brinquedos.jpg" class="slide-image" />
         <h2 class="slide-title">Pronto para continuar?</h2>
+        <p>Nossa turminha está pronta para apresentar todas essas descobertas.</p>
         <ion-button fill="clear" (click)="startApp()">
           Continuar
           <ion-icon slot="end" name="arrow-forward"></ion-icon>

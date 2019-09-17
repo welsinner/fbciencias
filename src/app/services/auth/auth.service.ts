@@ -19,24 +19,24 @@ export class AuthService {
       icon: 'home'
     },
     {
-      title: 'Meus Dados',
-      url: '/meus-dados',
+      title: 'Albert Einstein',
+      url: '/einstein',
       icon: 'person'
     },
     {
-      title: 'Usuários',
-      url: '/usuarios',
-      icon: 'people'
+      title: 'Computadores',
+      url: '/computadores',
+      icon: 'laptop'
     },
     {
-      title: 'Veículos',
-      url: '/veiculos',
-      icon: 'car'
+      title: 'Profissões',
+      url: '/profissoes',
+      icon: 'briefcase'
     },
     {
-      title: 'Reservas',
-      url: '/reservas',
-      icon: 'clipboard'
+      title: 'Sala de Aula',
+      url: '/aulas',
+      icon: 'school'
     }
   ];
 
