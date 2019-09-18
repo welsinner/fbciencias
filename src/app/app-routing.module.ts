@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: 'computadores', loadChildren: './pages/computadores/computadores.module#ComputadoresPageModule' },
   { path: 'profissoes', loadChildren: './pages/profissoes/profissoes.module#ProfissoesPageModule' },
   { path: 'aulas', loadChildren: './pages/aulas/aulas.module#AulasPageModule' },
+  { path: 'encerramento', loadChildren: './pages/encerramento/encerramento.module#EncerramentoPageModule' },
 ];
 
 @NgModule({

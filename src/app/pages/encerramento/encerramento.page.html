@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Obrigado</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager="false">
+    <ion-slide>
+      <img src="assets/img/slide-pronto.png" class="slide-image" />
+      <h2 class="slide-title">
+        Obrigado por sua visita!
+      </h2>
+      <p>Espero que tenha gostado da nossa Feira de Ciências.</p>
+      <p><b>Até a próxima!</b></p>
+      <ion-button expand="block" fill="outline" shape="round" href="/tutorial?force=true">
+        Nova Apresentação
+        <ion-icon name="refresh"></ion-icon>
+      </ion-button>
+    </ion-slide>
+  </ion-slides>
+
+</ion-content>
